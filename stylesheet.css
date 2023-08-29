@@ -12,3 +12,10 @@
     display: flex;
     width: 400px;
 }
+
+title {
+    align-items: center;
+    display: flex;
+    right: auto;
+    left: auto;
+}

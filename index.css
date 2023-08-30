@@ -1,0 +1,61 @@
+.portfolio-pic{
+    margin: 25px 0 0 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100px;
+}
+
+img{
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    width: 300px;
+}
+
+title {
+    display: flex;
+    right: auto;
+    left: auto;
+}
+
+div {
+    text-align: center;
+    left: auto;
+    right: auto;
+    padding-top: 50px;
+}
+h1{
+    text-align: center;
+    font-size: xx-large;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.previous-student{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: palevioletred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.next-student {
+    margin-left: 850px;
+    margin-right: 10px;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: navajowhite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2{
+    text-align: center;
+    font-size: large;
+    color: brown;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+a:hover {
+    color: rgb(12, 97, 14);
+  }

@@ -57,6 +57,7 @@ h2{
 
 a:hover {
     color: rgb(12, 97, 14);
+    text-decoration: underline;
 }
 
 a:active{

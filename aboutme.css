@@ -6,7 +6,10 @@ h1{
 
 h2 {
     text-align: center;
+    font-size: x-large;
 }
+
+
 
 img {
     border-radius: 10px;
@@ -29,4 +32,19 @@ ul {
     color:fuchsia;
     display: table;
     margin: 0 auto;
+}
+
+a {
+    font-size: 1.5em;
+    text-decoration: solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a:hover {
+    color: rgb(198, 11, 154);
+    text-decoration: underline;
+}
+
+a:active{
+    color: blue;
 }

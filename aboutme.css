@@ -2,11 +2,13 @@ h1{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
+    margin-right: 20px;
 }
 
 h2 {
     text-align: center;
     font-size: x-large;
+    
 }
 
 
@@ -72,4 +74,8 @@ div.description {
     width: 500px;
     margin: auto;
     display: flex;
+}
+
+body{
+    background-color: bisque;
 }

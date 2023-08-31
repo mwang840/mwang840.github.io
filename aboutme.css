@@ -1,5 +1,6 @@
 h1{
     text-align: center;
+    margin-right: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
 }
@@ -50,8 +51,10 @@ a:active{
     color: blue;
 }
 
-div.description {
-    width: 500px;
-    margin: auto;
-    display: flex;
+div {
+    text-align: left;
+    padding-left: 30%;
+    left: auto;
+    right: auto;
+    padding-top: 2px;
 }

@@ -8,9 +8,8 @@
 
 img{
     border-radius: 10px;
-    width: 100%;
-    display: flex;
     width: 300px;
+    display: flex;
 }
 
 title {

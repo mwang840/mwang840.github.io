@@ -23,15 +23,16 @@ img {
 p{
     font-family: sans-serif;
     font-size: 20px;
-    color:chocolate;
+    color:rgb(0, 0, 0);
 }
 
 ul {
     font-family: sans-serif;
     font-size: x-large;
-    color:fuchsia;
+    color:black;
     display: table;
     margin: 0 auto;
+    width: 500px;
 }
 
 a {
@@ -47,4 +48,10 @@ a:hover {
 
 a:active{
     color: blue;
+}
+
+div.description {
+    width: 500px;
+    margin: auto;
+    display: flex;
 }

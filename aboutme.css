@@ -19,8 +19,8 @@ img {
     width: 100%;
     display: block;
     width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1500px;
+    margin-right: 1500px;
 }
 
 p{
@@ -83,3 +83,4 @@ div.description {
 body{
     background-color: bisque;
 }
+

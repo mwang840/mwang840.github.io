@@ -3,11 +3,13 @@ h1{
     margin-right: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
+    margin-right: 20px;
 }
 
 h2 {
     text-align: center;
     font-size: x-large;
+    
 }
 
 
@@ -72,14 +74,12 @@ a:active{
     color: blue;
 }
 
-div {
-    text-align: left;
-    padding-left: 30%;
-    left: auto;
-    right: auto;
-    padding-top: 2px;
+div.description {
+    width: 500px;
+    margin: auto;
+    display: flex;
 }
 
-body {
-    background-color: beige;
+body{
+    background-color: bisque;
 }

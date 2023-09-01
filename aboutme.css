@@ -84,3 +84,9 @@ body{
     background-color: bisque;
 }
 
+p{
+    margin-right: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}

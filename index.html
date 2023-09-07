@@ -19,10 +19,12 @@
                     <li><a href="https://mwang840.github.io/aboutme.html">About Me</a></li>
                     <li><a href="https://github.com/mwang840"><i class="fa fa-github fa-2x"></i></a></li>
                     <li><a href="https://www.linkedin.com/in/maxwell-wang-08ws/"><i class="fa fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="https://www.youtube.com/@draco4809"><i class="fa fa-youtube fa-2x"></i></a></li>
                 </ul>
             </nav>
         </header>
     <div><h1>Maxwell Wang</h1></div>
+    <div><h1 class="CS-student">Computer Science Student.</h1></div>
         
     
     <!--
@@ -39,7 +41,16 @@
     <div class="toAboutMe">
         <h2>Other Undergraduate Student Links see below</h2>
     </div>
-    <button class="previous-student" onClick="">Previous Student</button>
-    <button class="next-student" onClick="">Next Student</button>
+    <button class="previous-student" onClick="previousStudent()" id="prev-student">Previous Student</button>
+    <button class="next-student" onClick="nextStudent()">Next Student</button>
+    <script>
+        function previousStudent(){
+            location.replace("https://bladetyr.github.io/");
+        }
+
+        function nextStudent(){
+            location.replace("https://jillsuecamp.github.io/")
+        }
+    </script>
 </body>
 </html>

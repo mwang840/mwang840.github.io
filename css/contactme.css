@@ -40,3 +40,11 @@ a:hover {
 a:active{
     color: blue;
 }
+
+body{
+    background-color: bisque;
+}
+
+.contact-me{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

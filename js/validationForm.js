@@ -1,29 +1,44 @@
-$(document).ready(function () {
+$(document).ready(function() {
   $("#go").on("click", function (event) {
-    var initId = "";
-    emailjs.init(initId);
-    let firstName = document.forms["Information"]["fname"].value;
-    let lastName = document.forms["Information"]["lname"].value;
-    let email = document.forms["Information"]["user_email"].value;
-    let phoneNum = document.forms["Information"]["user_phone"].value;
-    let message = document.forms["Information"]["user_message"].value;
+    const information = {
+      firstName: document.getElementById("fname").value,
+      lastName: document.getElementById("lname").value,
+      email: document.getElementById("user_email").value,
+      phoneNum: document.getElementById("user_phone").value,
+      message: document.getElementById("user_message").value
+    }
     const emailValidator = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
+    const serviceID = "service_pdhhje";
+    const templateID = "template_onmrs6j";
     //Conditions to add if any of those forms is null or empty
     if (
-      firstName === null ||
-      lastName === null ||
-      email === null ||
-      phoneNum === null ||
-      message === null ||
-      firstName === "" ||
-      lastName === "" ||
-      email === "" ||
-      phoneNum === "" ||
-      message === ""
+      information.firstName === null ||
+      information.lastName === null ||
+      information.email === null ||
+      information.phoneNum === null ||
+      information.message === null ||
+      information.firstName === "" ||
+      information.lastName === "" ||
+      information.email === "" ||
+      information.phoneNum === "" ||
+      information.message === ""
     ) {
       return false;
-    } else if (email !== null && emailValidator.test(email) === false) {
+    } else if (information.email !== null && emailValidator.test(email) === false) {
       return false;
+    }
+    else{
+      emailjs.send(serviceID, templateID, information).then(
+        result => {
+          document.getElementById("fname").value = "";
+          document.getElementById("lname").value = "";
+          document.getElementById("user_email").value = "";
+          document.getElementById("user_phone").value = "";
+          document.getElementById("user_message").value = "";
+          console.log(result);
+        }
+      )
+      .catch((err)=> console.log(err));
     }
   });
 });

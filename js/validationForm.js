@@ -10,6 +10,8 @@ $(document).ready(function() {
     const emailValidator = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;
     const serviceID = "service_pdhhje";
     const templateID = "template_onmrs6j";
+    const publicKey = "LsnVrpJEioYyWQ1ji";
+    emailjs.init(publicKey);
     //Conditions to add if any of those forms is null or empty
     if (
       information.firstName === null ||

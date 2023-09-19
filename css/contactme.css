@@ -48,3 +48,18 @@ body{
 .contact-me{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+input[type=submit] {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: green;
+}
+
+input[type=text]{
+    width: 80%;
+    box-sizing: border-box;
+}

@@ -41,25 +41,54 @@ a:active{
     color: blue;
 }
 
-body{
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: bisque;
 }
 
-.contact-me{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-input[type=submit] {
+* {
     margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    font-family: 'Times New Roman', Times, serif;
-    background-color: green;
-}
-
-input[type=text]{
-    width: 80%;
+    padding: 0;
     box-sizing: border-box;
 }
+
+.contact-max{
+ min-height: 100vh;
+ padding: 2em;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.contact-max > div {
+    background-color: white;
+    padding: 3em;
+    border-radius: 10px;
+    box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.3);
+}
+
+.contact-max h1{
+    font-size: 2.5em;
+}
+
+.contact-max p {
+    max-width: 400px;
+    line-height: 27px;
+    margin:1em 0 2em 0;
+}
+
+button {
+    font-size: 20px;
+    background-color: #008CBA;
+    align-items: center;
+}
+
+.centerButton {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+

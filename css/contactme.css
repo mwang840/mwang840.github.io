@@ -92,3 +92,46 @@ button {
   transform: translate(-50%, -50%);
 }
 
+h1 {
+    text-align: center;
+}
+
+form {
+    padding-right: 25px;
+    padding-left: 25px;
+    background-color: darkkhaki;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.group{
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    width: 55px;
+    background-color: lightcoral;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.button{
+display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

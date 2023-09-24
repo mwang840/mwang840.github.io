@@ -2,10 +2,12 @@
     <html lang="en">
         <head>
             <title>Contact me</title>
-        <link rel="stylesheet" href="css/index.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="js/validationForm.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/contactme.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="js/validationForm.js"></script>
         </head>
         <body>
             <header>
@@ -23,35 +25,35 @@
                     </ul>
                 </nav>
             </header>
-            <div class="ContactMe">
-                <h1>Contact Me!</h1>
+           <section>
+            <div class="Contact-Form">
+                <h1>Contact Me</h1>
+                <p>Send out an email if you want to reach out to talk, ask questions or collaborate on projects!</p>
+                <form id="contact-max">
+                    <label for="user_fname">
+                        <input type="text" id="user_fname" name="user_fname" placeholder="First Name">
+                    </label>
+                    <br></br>
+                    <label for="user_lname">
+                        <input type="text" id="user_lname" name="user_lname" placeholder="Last Name">
+                    </label>
+                    <br></br>
+                    <label for="user_email">
+                        <input type="text" id="user_email" name="user_email" placeholder="Email">
+                    </label>
+                    <br></br>
+                    <label for="user_phone">
+                        <input type="text" id="user_phone" name="user_phone" placeholder="Phone Number">
+                    </label>
+                    <br></br>
+                    <label for="user_message">
+                        <input type="text" id="user_message" name="user_message" placeholder="User Message">
+                    </label>
+                    <br></br>
+                    <input type="submit" id="go" class="button" value="Submit">
+                </form>
             </div>
-            <p>
-            <form name="Information">
-                <div>
-                <label for='fname'>First Name:</label>
-                <input id='fname' type='text' class='form-control' required>
-                <br/>
-                <br/>
-                <label for='lname'>Last Name:</label>
-                <input id='lname' type='text' class='form-control' required>
-                <br/>
-                <br/>
-                <label for='user_email'>Email:</label>
-                <input id='user_email' type='text' class='form-control' required>
-                <br/>
-                <br/>
-                <label for='user_phone'>Phone Number:</label>
-                <input id='user_phone' type='text' class='form-control' required>
-                <br/>
-                <br/>
-                <label for='user_message'>What is your message?</label>
-                <input id='user_message' type='text' class='form-control' required>
-            </div>
-            <div>
-                <input type='submit' id='go' class='btn-danger' value='Submit'>
-            </div>
-            </form>
-        </p>
+           </section>
+           <script src="js/validationForm.js"></script>
         </body>
 </html>

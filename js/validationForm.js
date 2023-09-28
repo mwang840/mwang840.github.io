@@ -14,8 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       message: message,
     };
     const phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-    const emailRegex =
-      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     let validInfo = false;
     if (!phoneRegex.test(phoneNum)) {
       console.log("Invalid phone number");

@@ -115,3 +115,53 @@ h1.CS-student {
     font-size: x-large;
     
 }
+
+table, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+div.careers_interests{
+    font-size: 30px;
+}
+
+td {
+    padding: 5px;
+    text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: greenyellow;
+}
+
+tr:nth-child(odd){
+    background-color: lightskyblue;
+}
+
+li.class_content{
+    font-size: medium;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.class_content .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.class_content:hover .links {
+    display: block;
+}

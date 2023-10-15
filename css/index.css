@@ -172,3 +172,23 @@ body{
 .navbar:hover .dropdown-content{
     display: block;
 }
+
+.footer{
+    margin-top: 15px;
+    background-color:rosybrown;
+    overflow: hidden;
+    padding: 0 5px;
+    display: flex;
+    justify-content:space-around;
+}
+
+.footer a{
+    color: black;
+}
+.footer a:active{
+    color: skyblue;
+}
+
+.footer a:hover{
+    color: rgb(12, 97, 14);
+}

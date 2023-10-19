@@ -58,7 +58,7 @@ h2.description{
     background-color:rosybrown;
     overflow: hidden;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     padding: 0 10px;
 }
 
@@ -95,8 +95,14 @@ table, td{
     font-size: 20px;
 }
 
+h1.Careers{
+    text-align: center;
+}
+
 div.careers_interests{
+    display: inline-block;
     font-size: 30px;
+    vertical-align: middle;
 }
 
 td {
@@ -168,7 +174,7 @@ body{
   text-align: left;
 }
 
-.navbar:hover .dropdown-content{
+.navbar .class_content:hover .dropdown-content{
     display: block;
 }
 
@@ -178,7 +184,7 @@ body{
     overflow: hidden;
     padding: 0 5px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-evenly;
 }
 
 .footer a{

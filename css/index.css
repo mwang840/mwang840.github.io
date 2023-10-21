@@ -202,3 +202,44 @@ body{
     margin-right: 80px;
     margin-left: 85px;
 }
+
+.presenting {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading-icon{
+    border-radius: 50%;
+  animation: bounce 1.5s infinite alternate;
+}
+
+.loading{
+    width: 100px;
+    height: 10px;
+    background-color: rgb(128, 23, 0);
+    margin-top: 20px;
+}
+
+.loading-progress {
+    width: 0;
+    height: 100%;
+    background-color: #3498db;
+    transition: width 0.3s ease-in-out;
+}
+
+/* #load {
+    display: none;
+} */

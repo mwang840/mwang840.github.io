@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       phoneNum: phoneNum,
       message: message,
     };
-    const phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    const phoneRegex = /^(1-)?\d{3}-\d{3}-\d{4}$/;
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     let validInfo = false;
     if (!phoneRegex.test(phoneNum)) {

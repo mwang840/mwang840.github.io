@@ -8,58 +8,64 @@
         <link rel="stylesheet" href="css/aboutme.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        
     </head>
     <body>
+        <div class="presenting">
+            <div class="loading-container">
+                Loading...
+                <div class="loading-icon">
+                    <img src="favicon.ico">
+                </div>
+                <div class="loading">
+                    <div class="loading-progress"></div>
+                </div>
+            </div>
+        </div>
+        <section id="load">
         <header>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="https://bladetyr.github.io/"><i class="fa fa-backward"></i>Previous Student</a></li>
-                    <li><a href="https://mwang840.github.io">Home</a></li>
-                    <li><a href="https://mwang840.github.io/aboutme.html">About Me</a></li>
-                    <li><a href="https://mattm401.github.io/">Advanced Web Technologies</a></li>
-                    <li><a href="https://mwang840.github.io/contactme.html">Contact Me!</a></li>
-                    <li><a href="https://drive.google.com/file/d/1502AXMuCUtZy84c5Jx_ePrs5xUBoHTQ3/view?usp=sharing"><i class="fa fa-file fa-2x"></i></a></li>
-                    <li><a href="https://github.com/mwang840"><i class="fa fa-github fa-2x"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/maxwell-wang-08ws/"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                    <li><a href="https://www.youtube.com/@draco4809"><i class="fa fa-youtube fa-2x"></i></a></li>
-                    <li><a href="https://jillsuecamp.github.io/">Next Student<i class="fa fa-forward"></i></a></li>
-                </ul>
-            </nav>
+            <div class="navbar">
+                <a href="https://mwang840.github.io">Home</a>
+                <a href="https://mwang840.github.io/aboutme.html">About Me</a>
+                <a href="https://mwang840.github.io/contactme.html">Contact Me!</a>
+                <a href="https://drive.google.com/file/d/1502AXMuCUtZy84c5Jx_ePrs5xUBoHTQ3/view?usp=sharing"><i class="fa fa-file fa-2x"></i></a>
+                <div class="class_content">
+                    <button class="dropbtn">Class Links 
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="https://mattm401.github.io/">Advanced Web Technologies</a>
+                        <a href="https://bladetyr.github.io/"><i class="fa fa-backward"></i>Previous Student</a>
+                        <a href="https://jillsuecamp.github.io/">Next Student<i class="fa fa-forward"></i></a>
+                    </div>
+                </div> 
+            </div>
         </header>
     <!--
         Here is where I describe myself down below
     -->
+    
     <div class="About">
         <h1>About me</h1>
     </div>
-    
     <div class="pictureAgain">
         <img src="images/maxwell_wang_new.jpg" alt="Maxwell Wang">
     </div>
     <div class="description">
         <p>Hello everyone 👋, my name is Maxwell Wang! You guys can call me Max!</p>
-        <p>I am a senior computer science major focusing on AI and Data Visualization and I am looking forward to learning the tech stack this semester 🖥️.</p>
+        <p>I'm a senior computer science major who's interests is specialized on AI and Data Visualization and I am looking forward to learning the tech stack this semester 🖥️.</p>
         <p>I like web development and I&apos;ve been working with a lot of frontend code such as React, Next and Html/Css/JavaScript and I am looking forward for learning more with this class, specifically the back-end and database side of coding 🌐.</p>
+        <p>Quick fun facts, I like weightlifting, mario kart wii, soccer, traveling, aviation and chess</p>
+        <p>An odd fact you guys didn't know is that I am on the autism spectrum.</p>
     </div>
     
-    <!--
-        Some of my interests down below!
-    -->
-    <h2 class="Discussion">Here are some of the stuff I like to do in my free time! ⌚</h2>
-    <div>
-    <ul class="freeTime">
-        <li><p>Chess: I have been playing the sport since elementary school and progressively getting better at the sport♔</p></li>
-        <li><p>Soccer: I like the team Tottenham, don&apos;t roast me for my team selection (my team has not won a trophy in 30 years) ⚽.</p></li>
-        <li><p>Traveling: The world is big, so why not visit places throughout the world! 🗺️</p></li>
-        <li><p>Hiking: I love nature and a big challenge to keep me physically active! I like Arches National Park, it is one of my favorite parks. 🏞️</p></li>
-        <li><p>Movies: I am a big fan of horror movies currently. The Halloween series are my favorite franchise! 📽️</p></li>
-        <li><p>Utah: Over the summer I&apos;ve interned and lived in Utah on my own and I can say the scenery is amazing. Mountain views and their parks are spectacular! 🏔️</p></li>
-        <li><p>Aviation: I have gotten into aviation since I have started traveling. I like the Boeing 777 one of my favorite aircraft types and I hope to fly on the Airbus A-380 in the future (I like Etihad since the logo is amazing for me 🇦🇪) 🛧!</p></li>
-        <li><p>Weightlifting: I want to have a better physique so getting into weightlifting is something I love to do. I am not strong yet tho, but will get there for sure🏋🏻. PRs: Squat 165lbs, Bench 125lbs 👍</p></li>
-        <li><p>Mathmatics: I love calculus and proofs. Sadly CS took me out of math. Hope I can get back into math soon!</p></li>
-    </ul>
-    <p>A fun fact about me is that I can remember most airports around the world.</p>
+    <div class="footer">
+        <a href="https://github.com/mwang840"><i class="fa fa-github fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/maxwell-wang-08ws/"><i class="fa fa-linkedin fa-2x"></i></a>
+        <a href="https://www.youtube.com/@draco4809"><i class="fa fa-youtube fa-2x"></i></a>
     </div>
+</section>
+<script src="js/loadingScreen.js"></script>
 </body>
 
 </html>

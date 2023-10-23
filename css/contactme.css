@@ -1,50 +1,171 @@
-nav {
-    background-color: rosybrown;
-    height: 75px;
-    width: 100%;
+.class_content .dropbtn {
+    font-size: 17px;  
+    border: none;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav ul {
-    float: left;
-    margin-right: 20px;
+.class_content:hover .links {
+    display: block;
 }
 
-nav ul li {
-    display: inline-block;
-    line-height: 75px;
-    margin: 0 5px;
+body{
+    background-color: bisque;
 }
 
-nav ul li a {
-    color: rgb(0, 0, 0);
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: bisque;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a:hover {
+    color: rgb(12, 97, 14);
+}
+
+.dropdown-content a:active{
+    color: skyblue;
+}
+
+.dropdown-content a{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.navbar{
+    background-color:rosybrown;
+    overflow: hidden;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 0 10px;
+}
+
+.navbar a{
+    display: flex;
+    color: black;
+    text-align: center;
     font-size: 17px;
-    text-transform: uppercase;
-    padding: 20px 20px;
-    border-radius: 3px;
-    position: relative;
-}
-
-a {
-    font-size: 1.5em;
-    text-decoration: solid;
+    text-decoration: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
+    float: left;
 }
 
-a:hover {
+a:hover{
     color: rgb(12, 97, 14);
-    text-decoration: underline;
 }
-
 
 a:active{
-    color: blue;
+    color: skyblue;
 }
+
+.navbar .class_content:hover .dropdown-content{
+    display: block;
+}
+
+.footer{
+    margin-top: 15px;
+    background-color:rosybrown;
+    overflow: hidden;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer a{
+    color: black;
+}
+.footer a:active{
+    color: skyblue;
+}
+
+.footer a:hover{
+    color: rgb(12, 97, 14);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: bisque;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a:hover {
+      color: rgb(12, 97, 14);
+  }
+  
+  .dropdown-content a:active{
+      color: skyblue;
+  }
+  
+  .dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.presenting {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .loading-icon{
+      border-radius: 50%;
+    animation: bounce 1.5s infinite alternate;
+  }
+  
+  .loading{
+      width: 100px;
+      height: 10px;
+      background-color: rgb(128, 23, 0);
+      margin-top: 20px;
+  }
+  
+  .loading-progress {
+      width: 0;
+      height: 100%;
+      background-color: #3498db;
+      transition: width 0.3s ease-in-out;
+  }
 
 body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: bisque;
 }
+
+.Title{
+    text-align: center;
+}
+
 
 * {
     margin: 0;
@@ -68,8 +189,9 @@ body {
 }
 
 .reducedWidth{
-    align-content: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .Contact-Form h1{
@@ -112,7 +234,8 @@ form {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 500px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .group{

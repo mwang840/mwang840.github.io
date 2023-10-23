@@ -9,27 +9,42 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         </head>
         <body>
+            <div class="presenting">
+                <div class="loading-container">
+                    Loading...
+                    <div class="loading-icon">
+                        <img src="favicon.ico">
+                    </div>
+                    <div class="loading">
+                        <div class="loading-progress"></div>
+                    </div>
+                </div>
+            </div>
             <header>
-                <nav>
-                    <ul class="navbar">
-                        <li><a href="https://bladetyr.github.io/"><i class="fa fa-backward"></i>Previous Student</a></li>
-                        <li><a href="https://mwang840.github.io">Home</a></li>
-                        <li><a href="https://mwang840.github.io/aboutme.html">About Me</a></li>
-                        <li><a href="https://mattm401.github.io/">Advanced Web Technologies</a></li>
-                        <li><a href="https://mwang840.github.io/contactme.html">Contact Me!</a></li>
-                        <li><a href="https://drive.google.com/file/d/1502AXMuCUtZy84c5Jx_ePrs5xUBoHTQ3/view?usp=sharing"><i class="fa fa-file fa-2x"></i></a></li>
-                        <li><a href="https://github.com/mwang840"><i class="fa fa-github fa-2x"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/maxwell-wang-08ws/"><i class="fa fa-linkedin fa-2x"></i></a></li>
-                        <li><a href="https://www.youtube.com/@draco4809"><i class="fa fa-youtube fa-2x"></i></a></li>
-                        <li><a href="https://jillsuecamp.github.io/">Next Student<i class="fa fa-forward"></i></a></li>
-                    </ul>
-                </nav>
+                <div class="navbar">
+                    <a href="https://mwang840.github.io">Home</a>
+                    <a href="https://mwang840.github.io/aboutme.html">About Me</a>
+                    <a href="https://mwang840.github.io/contactme.html">Contact Me!</a>
+                    <a href="https://mwang840.github.io/projects.html">Projects</a>
+                    <a href="https://drive.google.com/file/d/1502AXMuCUtZy84c5Jx_ePrs5xUBoHTQ3/view?usp=sharing"><i class="fa fa-file fa-2x"></i></a>
+                    <div class="class_content">
+                        <button class="dropbtn">Class Links 
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="https://mattm401.github.io/">Advanced Web Technologies</a>
+                            <a href="https://bladetyr.github.io/"><i class="fa fa-backward"></i>Previous Student</a>
+                            <a href="https://jillsuecamp.github.io/">Next Student<i class="fa fa-forward"></i></a>
+                        </div>
+                    </div> 
+                </div>
             </header>
-           <section>
+           <section id="load">
             <div class="reducedWidth">
-            <div class="Contact-Form" style="width: 80%;">
                 <h1>Contact Me</h1>
                 <p>Send out an email if you want to reach out to talk, ask questions or collaborate on projects!</p>
+            <div class="Contact-Form" style="width: 80%;">
+                
                 <form id="contact-max">
                     <div class="group">
                         <label for="user_fname">First Name</label>
@@ -55,7 +70,13 @@
                 </form>
             </div>
         </div>
+        <div class="footer">
+            <a href="https://github.com/mwang840"><i class="fa fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/maxwell-wang-08ws/"><i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="https://www.youtube.com/@draco4809"><i class="fa fa-youtube fa-2x"></i></a>
+        </div>
            </section>
            <script src="js/validationForm.js"></script>
+           <script src="js/loadingScreen.js"></script>
         </body>
 </html>

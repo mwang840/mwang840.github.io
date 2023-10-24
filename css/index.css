@@ -240,6 +240,6 @@ body{
     transition: width 0.3s ease-in-out;
 }
 
-/* #load {
-    display: none;
-} */
+.word{
+    padding-left: 5px;
+}

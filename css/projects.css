@@ -147,62 +147,21 @@ body{
     }
 }
 
-.modal-content{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 50px;
-    left: 0;
-    top:0;
-    width:100%;
-    height:100%;
-    overflow: auto;
-    margin: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0,0,0,0.4);
+.card {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 4px;
 }
 
-.modal-item{
-    position: relative;
-    background-color: grey;
-    margin: auto;
-    width:80%;
-    padding: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-animation-name: modal;
-    -webkit-animation-duration: 0.4s;
-    animation-name: modal;
-    animation-duration: 0.4s;
+.card:hover {
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
 }
 
-.exit{
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold
+img {
+  border-radius: 5px 5px 0 0;
 }
 
-.exit:hover,
-.exit:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+.container {
+  padding: 2px 16px;
 }
-
-.modal {
-    max-width: 70vw;
-  }
-
-  table {
-    max-width: 80vw;
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  
-  .table-collapsible {
-    margin-left: 5vw;
-    margin-right: 5vw;
-  }

@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.style.overflow = "hidden";
   let currentProgress = 0;
   const timeInterval = setInterval(() => {
-    if (currentProgress >= 300) {
+    if (currentProgress >= 600) {
       clearInterval(timeInterval);
       overlap.style.display = "none";
       start.style = "block";

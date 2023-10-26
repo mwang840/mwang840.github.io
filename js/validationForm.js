@@ -1,3 +1,6 @@
+let form = document.getElementById("contact-max");
+let form_status = document.getElementById("form_status");
+
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("form").addEventListener("submit", function (e) {
     e.preventDefault();
@@ -13,14 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
       phoneNum: phoneNum,
       message: message,
     };
-    const phoneRegex = /^(1-)?\d{3}-\d{3}-\d{4}$/;
-    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const phoneRegex = /[0-9]{3}-[0-9]{3}-[0-9]{4}/;
+    const emailRegex =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     let validInfo = false;
     if (!phoneRegex.test(phoneNum)) {
       console.log("Invalid phone number");
+      form_status.innerHTML = `<div class="error">There was an issue submitting the form. Please refresh the page and try again.</div>`;
       return false;
     } else if (!emailRegex.test(email)) {
       console.log("Invalid email");
+      form_status.innerHTML = `<div class="error">There was an issue submitting the form. Please refresh the page and try again.</div>`;
       return false;
     } else if (
       content.firstName === null ||
@@ -35,8 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
       content.email === ""
     ) {
       console.log("Cant leave forms empty, please fill out the forms");
+      form_status.innerHTML = `<div class="error">There was an issue submitting the form. Please refresh the page and try again.</div>`;
       return false;
     } else {
+      content.phoneNum.replace();
       emailjs.init("LsnVrpJEioYyWQ1ji");
       emailjs
         .send("service_20w6kba", "template_onmrs6j", content)
@@ -52,7 +60,5 @@ document.addEventListener("DOMContentLoaded", function () {
           console.log("Email failed to send");
         });
     }
-    
   });
-
 });

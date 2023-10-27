@@ -18,7 +18,7 @@ h2 {
 
 .pictureAgain{
     width: 500px;
-    height: 520px;
+    height: 500px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -29,8 +29,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     place-items: center;
-    width: 50%;
-    height: 50%;
+    width: 500px;
+    height: 400px;
 }
 
 p{
@@ -42,7 +42,8 @@ p{
 }
 
 .description{
-    margin: 0;
+    display: inline-block;
+    width: fit-content;
 }
 
 .navbar{

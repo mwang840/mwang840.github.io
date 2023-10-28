@@ -247,7 +247,9 @@ body{
 
 /*Mobile implementation*/
 @media only screen and (max-width: 600px) {
-    div.Maxwell{
-        font-size: 80px;
-    }
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+      }
 }

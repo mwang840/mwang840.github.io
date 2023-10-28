@@ -8,7 +8,8 @@
 
 img{
     border-radius: 10px;
-    width: 300px;
+    width: 10%;
+    height: 10%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -111,11 +112,7 @@ td {
     text-align: left;
 }
 
-tr:nth-child(even){
-    background-color: beige;
-}
-
-tr:nth-child(odd){
+tr:nth-child(){
     background-color: bisque;
 }
 
@@ -186,6 +183,8 @@ body{
     padding: 0 5px;
     display: flex;
     justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer a{
@@ -194,6 +193,7 @@ body{
 .footer a:active{
     color: skyblue;
 }
+
 
 .footer a:hover{
     color: rgb(12, 97, 14);
@@ -244,6 +244,7 @@ body{
 .word{
     padding-left: 5px;
 }
+
 
 /*Mobile implementation*/
 @media only screen and (max-width: 600px) {

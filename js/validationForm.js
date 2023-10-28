@@ -62,3 +62,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+function phoneFormat(input) {
+  /*
+      modified from:
+      https://stackoverflow.com/a/68822305
+  */
+
+  input = input.replace(/\D/g, "");
+  var size = input.length;
+  if (size > 0) {
+    input;
+  }
+  if (size > 3) {
+    input = input.slice(0, 3) + "-" + input.slice(3, 10);
+  }
+  if (size > 6) {
+    input = input.slice(0, 7) + "-" + input.slice(7);
+  }
+  return input;
+}
+//Thanks Evan for the function

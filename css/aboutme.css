@@ -196,3 +196,37 @@ div.About{
       background-color: #3498db;
       transition: width 0.3s ease-in-out;
   }
+
+  /*Mobile implementation*/
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+        float: right;
+        display: block;
+      }
+}
+
+.navbar .icon{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .navbar.responsive {position:relative;}
+    .navbar.responsive .icon{
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    .navbar.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+.navbar a:not(:first-child){
+    margin-left: 15px;
+    padding-bottom: 15px;
+}

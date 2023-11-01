@@ -134,6 +134,9 @@ body{
 
   .Projects{
     text-align: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
   }
 
   @keyframes modal-content{
@@ -225,5 +228,11 @@ a{
 
 .navbar a:not(:first-child){
   margin-left: 15px;
-  padding-bottom: 15px;
+}
+
+button.accordion{
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
 }

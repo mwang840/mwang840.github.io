@@ -60,7 +60,7 @@ h2.description{
     overflow: hidden;
     display: flex;
     justify-content:space-evenly;
-    padding: 0 10px;
+    padding: 5px;
 }
 
 .navbar a{
@@ -175,7 +175,6 @@ body{
 
 .navbar a:not(:first-child){
     margin-left: 15px;
-    padding-bottom: 15px;
 }
 
 .navbar .class_content:hover .dropdown-content{

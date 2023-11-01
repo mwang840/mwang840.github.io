@@ -225,5 +225,4 @@ a{
 
 .navbar a:not(:first-child){
   margin-left: 15px;
-  padding-bottom: 15px;
 }

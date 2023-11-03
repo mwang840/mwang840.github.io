@@ -8,8 +8,8 @@
 
 img{
     border-radius: 10px;
-    width: 10%;
-    height: 10%;
+    width: 50%;
+    height: 50%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -175,6 +175,7 @@ body{
 
 .navbar a:not(:first-child){
     margin-left: 15px;
+    margin-bottom: 15px;
 }
 
 .navbar .class_content:hover .dropdown-content{

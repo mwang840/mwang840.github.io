@@ -228,6 +228,7 @@ a{
 
 .navbar a:not(:first-child){
   margin-left: 15px;
+  margin-bottom: 15px;
 }
 
 button.accordion{
@@ -235,4 +236,16 @@ button.accordion{
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
+}
+
+h2.Project-Description{
+  text-align: center;
+  font-size: italic; 
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Project-Info{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
 }
